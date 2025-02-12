@@ -1,65 +1,82 @@
-# Project Title
+# Product Checkout System
 
 ## Overview
+This project provides a **reliable and efficient solution** for managing product checkouts. It includes functionalities such as:
+- Calculating total prices with discounts
+- Handling invalid product IDs
 
-This project is designed to provide a reliable and efficient solution for managing product checkouts. It includes functionalities such as calculating total prices with discounts and handling invalid product IDs.
+## Application Architecture
+- The server is created using **Clean Architecture** principles.
+- The application follows a **modular structure** for maintainability and readability.
+- Implements **Dependency Injection (DI)** for improved testability and flexibility.
+- The application is divided into **multiple layers**:
+  - `routes/` - Defines the API routes.
+  - `controller/` - Handles incoming requests, validates data, and returns responses.
+  - `service/` - Contains business logic.
+  - `repository/` - Manages data access logic.
+  - `models/` - Defines the data structures.
 
-### 1. Correctness
+## Readability
+- The code is divided into **small, reusable components**.
+- Clear separation of concerns:
+  - `routes` for API endpoints
+  - `controller` for handling requests
+  - `service` for business logic
+  - `repository` for database interactions
+  - `models` for data structures
 
-- Does the solution meet the outlined requirements?
-- While edge cases are not the focus, the core functionality should be reliable.
+## Testing
+- The application uses **Jest** for unit and integration testing.
+- Core functionalities are covered by tests.
+- Tests are structured to be **readable and maintainable**.
 
-### 2. Application Architecture
-
-- Server is created uisng the clean architecture?
-- The application is structured in a way that is easy to understand and maintain.
-- Used the Dependency Injection pattern to make the application more testable and flexible.
-- By using the Dependency Injection pattern, the application is not tightly coupled to the implementation of the services.
-- For better code readability and maintainability, the application is divided into multiple layers: `routes`,`controller`, `service`,`models`, and `repository`.
-
-### 3. Readability
-
-- The code is divided into small components.
-- The `routes` is responsible for defining the routes of the application.
-- The `controller` layer is responsible for handling incoming requests,validating the request and returning responses.
-- The `service` layer is responsible for handling business logic.
-- The `repository` layer is responsible for handling data access logic.
-- The `models` is responsible for defining the data structure of the application.
-
-### 4. Testing
-
-- The application is tested using the Jest framework.
-- The main functionalities of the application are tested.
-- The tests are written in a way that is easy to understand and maintain.
-- Run `npm test` to start the test.
+### Run Tests:
+```sh
+npm test
+```
 
 ## Getting Started
-
-Provide instructions on how to set up and run the project locally.
-
 ### Prerequisites
-
-- Node.js
-- npm
+- **Node.js** (v14 or later)
+- **npm** (Node Package Manager)
 
 ### Installation
-
-- Clone the repository
-- Run `npm install` to install the dependencies
+1. Clone the repository:
+   ```sh
+   git clone https://github.com/your-username/your-repo.git
+   cd your-repo
+   ```
+2. Install dependencies:
+   ```sh
+   npm install
+   ```
 
 ### Usage
-
-- Run `npm start` to start the server
-- The server will be running on `http://localhost:8080`
+1. Start the server:
+   ```sh
+   npm start
+   ```
+2. The server will run on:
+   ```sh
+   http://localhost:8080
+   ```
 
 ## Running Tests
-
-- Run `npm test` to start the test.
+To run the tests, execute:
+```sh
+npm test
+```
 
 ## Notes
+- Built with **Node.js** and **Express.js**.
+- Uses **Jest** for testing.
+- Follows **Clean Architecture**.
+- The database is mocked using a simple **JSON file** for demonstration purposes.
+- The **repository layer** is designed to be easily replaceable with a real database in the future.
 
-- The application is built using Node.js and Express.js.
-- The application is tested using the Jest framework.
-- The application is structured using the clean architecture.
-- For `database` mock, I have used a simple JSON file.
-- The `repository` layer is responsible for handling data access logic. It is designed to be easily replaceable with a real database.
+---
+### Contribution
+Feel free to submit a pull request or report issues.
+
+🚀 **Happy Coding!**
+
