@@ -43,7 +43,7 @@ npm test
 ### Installation
 1. Clone the repository:
    ```sh
-   git clone https://github.com/your-username/your-repo.git
+   git clone https://github.com/Saqlainabbasi/server_task_nodejs.git
    cd your-repo
    ```
 2. Install dependencies:
